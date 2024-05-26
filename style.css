@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+html{
+    height: 100%;
+}
+body{
+    min-height: 100%;
+
+}
+
+.conteiner{
+    display: grid;
+    grid-template:
+    "header" 100px
+    "main"
+    "footer" 120px;
+}
+
+/* HEADER */
+
+.header-conteiner{
+    grid-area: header;
+    background-color: #07020D;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    
+}
+.main-conteiner{
+    grid-area: main;
+    background-color: #F1E9DB;
+}
+.footer-conteiner{
+    grid-area: footer;
+    background-color: #A39B8B;
+}
+
+.nav-conteiner{
+
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    margin: 0 150px;
+}
+.logo{
+    width: 250px;
+    line-height: 100px;
+}
+
+.nav-menu{
+    display: flex;
+    list-style: none;
+}
+.nav-menu-items{
+    margin: 0px 20px;
+
+}
+.nav-menu-link:hover{
+    background-color: #5DB7DE;
+    color: #07020D;
+    padding: 6px;
+    border-radius: 3px;
+    transition: all .6s;
+
+}
+.nav-link{
+    text-decoration: none;
+    color: #F1E9DB;
+}
+.busqueda-conteiner{
+    display: flex;
+    gap: 5px;
+}
+.input-busqueda{
+
+    border-radius: 10px;
+    border: #5DB7DE 3px solid;
+}
+.button-buscar{
+
+    border: #5DB7DE 3px solid;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 3px;
+    background-color: black;
+
+    
+}
+.button-buscar i{
+    color: #5DB7DE;
+    font-size: 40px;
+
+}
+
+.novedades{
+    text-align: center;
+}
+
+
+/* MAIN */
+/*SECCION1*/
+.bienvenida-conteiner{
+    background-image: url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9uZG8lMjBkZSUyMGxhJTIwYmlibGlvdGVjYXxlbnwwfHwwfHx8MA%3D%3D");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin: 50px 150px;
+    height: 450px;
+    border-radius: 7px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    
+}
+.bienvenida-conteiner h1{
+    font-size: 3em;
+    color: #ffffff;
+    background-color: rgba(128, 128, 128, 0.585);
+    text-align: center;
+    padding: 20px;
+
+}
+
+/*SECCION2*/
+
+.categorias-conteiner{
+    margin: 50px 150px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 60px;
+}
+.libros-conteiner{
+    height: auto;
+    width: auto;
+    background-color: #F1E9DB;
+
+
+
+    /* border: 2px solid #07020D ;
+    padding: 3px;
+    border-radius: 6px; */
+    
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition: all 0.5s ;
+
+}
+.libros-conteiner:hover{
+    background-color: rgba(128, 128, 128, 0.401);
+    padding: 10px;
+
+}
+
+.libros-conteiner button{
+    padding: 5px ;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+
+    background-color: #FFFFFF    ;
+    border: #5DB7DE 3px solid;
+    border-radius: 6px;
+    cursor: pointer;
+
+}
+.libros-conteiner button:hover{
+    background-color: #5DB7DE;
+    border: #07020D 3px solid;
+
+}
+.libros-conteiner h1{
+    font-size: 25px;
+}
+.libros-conteiner h2{
+    font-weight: normal;
+    font-size: 20px;
+}
+
+/*FOOTER*/
+.footer-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-menu{
+    list-style: none;
+
+    display: flex;
+}
+
+.footer-menu-items{
+    margin: 0 5px;
+}
+
+
+
+
+
+/*CONTACTOS*/
+.conteiner-contactos{
+    padding: 50px 80px;
+    display: grid;
+    grid-template:'video-contactos info-conteiner-contactos'
+                  'map-contactos map-contactos'
+                  ;
+    gap: 10px;
+}
+.video-contactos{
+    grid-area: video-contactos;
+    width: 600px;
+
+
+}
+.info-conteiner-contactos{
+    grid-area: info-conteiner-contactos;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+
+
+
+}
+.info-conteiner-contactos ul{
+    list-style: none;
+}
+.map-contactos{
+    grid-area: map-contactos;
+    width: 100%;
+}
+
+
+
+/*LOGIN*/
+.conteiner-formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ingresar{
+    margin-bottom: 50px;
+}
+
+
+.ingresar form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+.registrar{
+    margin-bottom: 50px;
+}
+
+
+.registrar form{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    text-align: center;
+}
+
+.input-login{
+    border: none;
+    border-bottom:#5DB7DE 3px solid;
+    border-left: #5DB7DE 3px solid;
+}
+.button-login{
+    border:none;
+    background-color: #5DB7DE;
+    padding: 3px;
+    transition: all 0.5s;
+}
+.button-login:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    
+}

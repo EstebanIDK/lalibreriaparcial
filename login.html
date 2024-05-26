@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La libreria | Iniciar Sesión</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/25eaf8db6f.js" crossorigin="anonymous"></script>
+</head>
+<body class="conteiner">
+    <header class="header-conteiner">
+        <nav class="nav-conteiner">
+            <a href="index.html"><img src="./img/logo.svg" alt="" class="logo nav-link"></a>
+            <ul class="nav-menu">
+                <li class="nav-menu-items"><a href="index.html" class="nav-menu-link nav-link">Inicio</a></li>
+                <li class="nav-menu-items"><a href="contacto.html" class="nav-menu-link nav-link">Contacto</a></li>
+                <li class="nav-menu-items"><a href="login.html" class="nav-menu-link nav-link">Login</a></li>
+            </ul>
+            <div class="busqueda-conteiner">
+                <input type="text" class="input-busqueda" placeholder="Buscar...">
+                <button class="button-buscar"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            
+        </nav>
+    </header>
+    <main class="main-conteiner">
+        <div class="conteiner-formulario">
+            <h1>Iniciar Sesión</h1>
+            <div class="ingresar">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" required class="input-login">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" name="contraseña" id="contraseña" required class="input-login">
+                    <label for="">¿Recordar Contraseña?
+                        <input type="checkbox">
+                    </label>
+                    <button class="button-login">Entrar</button>
+                </form>
+            </div>
+            <h1>Regristrarse</h1>
+            <div class="registrar">
+                <form action="">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="input-login">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" class="input-login">
+                    <label for="correo">Correo</label>
+                    <input type="email" class="input-login">
+                    <label for="contraseña">Contraseña</label>
+                    <input type="password" id="password" name="password" class="input-login">
+                    <label for="chekcontraseña">Confirmar contraseña</label>
+                    <input type="password" name="checkcontraseña" id="checkcontraseña" class="input-login">
+                    <label for="provincia">Provincia</label>
+                    <select name="provincia" id="provincia" class="input-login">
+                        <option value="Ciudad de Buenos Aires" selected>Ciudad de Buenos Aires</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego">Tierra del Fuego</option>
+                        <option value="Tucuman">Tucuman</option>
+                    </select>
+                    <label>¿Acepta los términos y condiciones?
+                        <input id="terminos" name="terminos" type="checkbox" value="acepta" required checked class="input-login"> Si, acepto los términos y condiciones.
+                    </label>
+                    
+                    <button class="button-login">Registrarme</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer-conteiner">
+        <ul class="footer-menu">
+            <li class="footer-menu-items">Av. Rivadavia 1755 - CABA | </li>
+            <li class="footer-menu-items">011-4444-6666 | </li>
+            <li class="footer-menu-items">contacto@lalibreria.com.ar</li>
+        </ul>
+    </footer>
+
+    
+</body>
+</html>
